@@ -1,0 +1,15 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 772, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/connection.py", line 37, in get_or_create_client
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/daemon.py", line 124, in start_daemon
+TimeoutError: Timed out waiting for artifact tool daemon socket. Set ARTIFACT_TOOL_RPC_DAEMON_STARTUP_TIMEOUT_S=<seconds> to increase the limit.
+test_input_is_not_modified (test_pipeline.TestSyntheticPipeline.test_input_is_not_modified) ... ok
+test_missing_required_column_fails (test_pipeline.TestSyntheticPipeline.test_missing_required_column_fails) ... ok
+test_output_contract_and_exclusions (test_pipeline.TestSyntheticPipeline.test_output_contract_and_exclusions) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.062s
+
+OK
